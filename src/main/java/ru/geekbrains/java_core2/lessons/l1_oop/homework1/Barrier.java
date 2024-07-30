@@ -1,13 +1,13 @@
 package ru.geekbrains.java_core2.lessons.l1_oop.homework1;
 
 public class Barrier implements Obstacle {
-    private int size;
+    private int height;
 
-    public Barrier(int size) {
-        this.size = size;
+    public Barrier(int height) {
+        this.height = height;
     }
 
-    public int getSize() {
-        return size;
+    public int getHeight() {
+        return height;
     }
 }

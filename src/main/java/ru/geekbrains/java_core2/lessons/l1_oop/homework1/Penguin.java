@@ -13,6 +13,7 @@ public class Penguin implements RunJumping {
 
     @Override
     public boolean run(int distance) {
+
         if(maxDistance >= distance) {
             System.out.printf("Penguin %s ran %d kilometers\n", name, distance);
             return true;
