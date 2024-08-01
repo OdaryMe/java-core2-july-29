@@ -8,6 +8,7 @@ public class Treadmill implements Obstacle {
     }
 
     public int getSize() {
+
         return size;
     }
 }

@@ -15,10 +15,10 @@ public class Homework1 {
         Obstacle[] obstacles = {
           new Treadmill(1),
           new Barrier(2),
-          new Treadmill(50),
+          new Treadmill(500),
           new Barrier(3),
-          new Treadmill(200),
-          new Barrier(5)
+          new Treadmill(2000),
+          new Barrier(8)
         };
 
         for (RunJumping runJumping : runJumpings) {
@@ -29,7 +29,7 @@ public class Homework1 {
                         break;
                     }
                 } else if (obstacle instanceof Barrier) {
-                    boolean jumpResult = runJumping.jump(((Barrier) obstacle).getSize());
+                    boolean jumpResult = runJumping.jump(((Barrier) obstacle).getHeight());
                     if(!jumpResult) {
                         break;
                     }

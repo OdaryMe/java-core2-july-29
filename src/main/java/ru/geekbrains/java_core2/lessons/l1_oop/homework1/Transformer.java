@@ -13,6 +13,7 @@ public class Transformer implements RunJumping{
 
     @Override
     public boolean run(int distance) {
+
         if(maxDistance >= distance) {
             System.out.printf("Transformer %s ran %d kilometers\n", model, distance);
             return true;

@@ -3,12 +3,12 @@ package ru.geekbrains.java_core2.lessons.l1_oop.homework1;
 public class Goblin implements RunJumping {
     String name;
     int maxDistance;
-    int maxHeight;
+    int maxJump;
 
     public Goblin(String name, int maxDistance, int maxHeight) {
         this.name = name;
         this.maxDistance = maxDistance;
-        this.maxHeight = maxHeight;
+        this.maxJump = maxJump;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Goblin implements RunJumping {
 
     @Override
     public boolean jump(int height) {
-        if(maxHeight >= height) {
+        if(maxJump >= height) {
         System.out.printf("Goblin %s jumped %d meters high\n", name, height);
             return true;
     } else {
