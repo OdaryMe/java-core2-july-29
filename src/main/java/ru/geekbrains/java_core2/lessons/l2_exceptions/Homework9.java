@@ -62,7 +62,6 @@ public class Homework9 {
                     Integer.parseInt(arr[i][j]);
                 } catch (NumberFormatException e) {
                     String message = "Invalid cell " + i + ":" + j;
-                    //var message = String.format("Invalid cell %d:%d%n", i, j);
                     throw new MyArrayDataException(message);
                 }
                 summ += Integer.parseInt(arr[i][j]);
