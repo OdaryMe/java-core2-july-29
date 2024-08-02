@@ -49,24 +49,23 @@ public class Homework9 {
 
     public static void parseStringArrToInt (String[][] arr) {
         int summ = 0;
-        int[][] set = new int[ARRSIZE][ARRSIZE];
-        if (arr.length != 4) {
+        if (arr.length != ARRSIZE) {
             throw new MyArraySizeException("Wrong Array Size");
         }
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i].length != 4) {
+            if (arr[i].length != ARRSIZE) {
                 throw new MyArraySizeException("Wrong Array Size");
             }
             for (int j = 0; j < arr[i].length; j++) {
                 try {
-                    set[i][j] = Integer.parseInt(arr[i][j]);
+                    Integer.parseInt(arr[i][j]);
                 } catch (NumberFormatException e) {
                     String message = "Invalid cell " + i + ":" + j;
                     //var message = String.format("Invalid cell %d:%d%n", i, j);
                     throw new MyArrayDataException(message);
                 }
-                summ += set[i][j];
+                summ += Integer.parseInt(arr[i][j]);
             }
         }
         System.out.println("Sum = " + summ);
