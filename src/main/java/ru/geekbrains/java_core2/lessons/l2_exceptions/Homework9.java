@@ -31,19 +31,19 @@ public class Homework9 {
         try {
             parseStringArrToInt(myArr);
         } catch (MyArraySizeException | MyArrayDataException e) {
-            System.out.println("Something went wrong. Check your array");
+            e.printStackTrace();
         }
 
         try {
             parseStringArrToInt(notMyArr);
         } catch (MyArraySizeException e) {
-            System.out.println("Something went wrong. Check size of your array");
+            e.printStackTrace();
         }
 
         try {
             parseStringArrToInt(crookedArr);
         } catch (MyArrayDataException e) {
-            System.out.println("Something went wrong. Check data of your array");
+            System.out.println(e.getMessage());
         }
     }
 
