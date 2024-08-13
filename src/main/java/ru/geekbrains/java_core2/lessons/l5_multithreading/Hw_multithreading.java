@@ -15,12 +15,12 @@ public class Hw_multithreading {
         float[] arr1 = getArr(val);
         float[] arr2 = getArr(val);
 
-        firstMethod(arr1, val);
-        secondMethod(arr2, val);
+        firstMethod(arr1);
+        secondMethod(arr2);
         System.out.println("Checking. Arrays are equal: " + Arrays.equals(arr1, arr2));
     }
 
-    private static void secondMethod(float[] arr2, float val) {
+    private static void secondMethod(float[] arr2) {
 
         long startTime = System.currentTimeMillis();
         float[] half1 = Arrays.copyOf(arr2, HALF);
@@ -46,7 +46,7 @@ public class Hw_multithreading {
         System.out.println("Two threads time: " + (finishTime - startTime) + " ms.");
     }
 
-    private static void firstMethod(float[] arr1, float val) {
+    private static void firstMethod(float[] arr1) {
         long startTime = System.currentTimeMillis();
         computArr(arr1, 0);
         long finishTime = System.currentTimeMillis();
