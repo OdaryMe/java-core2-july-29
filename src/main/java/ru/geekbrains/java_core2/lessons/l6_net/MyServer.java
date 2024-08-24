@@ -12,6 +12,7 @@ public class MyServer {
     private static final int PORT = 8189;
     private Socket socket;
     private int counter;
+
     private Map<Integer, Handler> handlers;
 
     public MyServer() {

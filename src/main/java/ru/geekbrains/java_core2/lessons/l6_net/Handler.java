@@ -2,7 +2,6 @@ package ru.geekbrains.java_core2.lessons.l6_net;
 
 import java.io.*;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class Handler implements Closeable {
     private MyServer server;
